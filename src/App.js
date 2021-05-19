@@ -77,8 +77,11 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>SAILOR MOON CHARACTERS</h1>
+    <div style={{ 
+      backgroundImage: `url("https://wallpapercave.com/wp/wp6203652.png")`, 
+      
+    }} className="App">
+      <h1 style={{color:"#DD869B", fontWeight: 'bold'}}>SAILOR MOON CHARACTERS</h1>
       <hr />
       <Link to="/create">
         <button>Add Sailor</button>

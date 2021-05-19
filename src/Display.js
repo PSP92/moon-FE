@@ -9,10 +9,10 @@ const Display = (props) => {
     <div style={{textAlign: "center"}}>
       {moons.map((moon) => (
         <article key={moon._id}>
-          <img src={moon.img}/>
-          <h1>{moon.name}</h1>
-          <h3>{moon.sign}</h3>
-          <h3>{moon.description}</h3>
+          <img style={{height:325  }} src={moon.img}/>
+          <h1 style={{color:"black"  }}>{moon.name}</h1>
+          <h3 style={{color:"black"  }}>{moon.sign}</h3>
+          <h4 style={{color:"black" }}>{moon.description}</h4>
           <button onClick={() => {
             selectMoon(moon)
             history.push("/edit")
