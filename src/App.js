@@ -8,10 +8,10 @@ function App() {
   // URL in a variable
   const url = "https://moonapi.herokuapp.com";
 
-  // State to hold the list of dogs
+  // State to hold the list of moons
   const [moons, setMoons] = React.useState([]);
 
-  // Empty Dog - For the Create Form
+  // Empty Moon- For the Create Form
   const emptyMoon = {
     img:"",
     name: "",
@@ -21,7 +21,7 @@ function App() {
 
   const [selectedMoon, setSelectedMoon] = React.useState(emptyMoon);
 
-  // Function to get list of Dogs
+  // Function to get list 
   const getMoons = () => {
     // make a get a request to this url
     fetch(url + "/moon/")
@@ -61,12 +61,12 @@ function App() {
     }).then(() => getMoons());
   };
 
-  // function to specify which dog we are updated
+  // function to specify which moon we are updated
   const selectMoon = (moon) => {
     setSelectedMoon(moon);
   };
 
-  // deleteDog to delete inidividual dogs
+  // deleteDog to delete inidividual moon
   const deleteMoon = (moon) => {
     fetch(url + "/moon/" + moon._id, {
       method: "delete"
