@@ -81,7 +81,7 @@ function App() {
       backgroundImage: `url("https://wallpapercave.com/wp/wp6203652.png")`, 
       
     }} className="App">
-      <h1 style={{color:"#DD869B", fontWeight: 'bold'}}>SAILOR MOON CHARACTERS</h1>
+      <h1 style={{color:"#DD869B", fontWeight: 'bold', fontFamily: 'Italianno' ,fontStyle: 'italic' }}>Sailor Moon Characters</h1>
       <hr />
       <Link to="/create">
         <button>Add Sailor</button>

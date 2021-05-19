@@ -11,8 +11,8 @@ const Display = (props) => {
         <article key={moon._id}>
           <img style={{height:325  }} src={moon.img}/>
           <h1 style={{color:"black"  }}>{moon.name}</h1>
-          <h3 style={{color:"black"  }}>{moon.sign}</h3>
-          <h4 style={{color:"black" }}>{moon.description}</h4>
+          <h2 style={{color:"black"  }}>{moon.sign}</h2>
+          <h3 style={{color:"black" }}>{moon.description}</h3>
           <button onClick={() => {
             selectMoon(moon)
             history.push("/edit")
