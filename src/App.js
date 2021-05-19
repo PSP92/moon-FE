@@ -6,7 +6,7 @@ import Form from "./Form";
 
 function App() {
   // URL in a variable
-  const url = "https://moonapi.herokuapp.com/";
+  const url = "https://moonapi.herokuapp.com";
 
   // State to hold the list of dogs
   const [moons, setMoons] = React.useState([]);
